@@ -10,7 +10,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Views\Home\DataGrid\" />
     <Folder Include="Views\Home\SimpleGrid\" />
+    <Folder Include="wwwroot\scripts\data-grid\" />
     <Folder Include="wwwroot\scripts\simple-grid\" />
   </ItemGroup>
 

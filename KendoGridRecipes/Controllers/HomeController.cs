@@ -18,6 +18,11 @@ namespace KendoGridRecipes.Controllers
             return View("SimpleGrid/Index");
         }
 
+        public IActionResult DataGrid()
+        {
+            return View("DataGrid/Index");
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
