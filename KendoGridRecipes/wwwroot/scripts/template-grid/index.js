@@ -21,7 +21,7 @@ class Program {
                 { field: 'FirstName', title: 'First Name', attributes: { style: 'font-weight: bold; color: red;' } },
                 { field: 'LastName',  title: 'Last Name',  attributes: { style: 'font-weight: bold; color: red;' } },
                 { field: 'Email',     title: 'Email',      attributes: { class: 'email-link' },   template: emailTemplate },
-                { field: 'Custom',    title: 'Custom',     attributes: { class: 'custom-field' }, template: '<div><span>#= LastName #, #= FirstName #</div>' },
+                { field: 'LastName',    title: 'Custom',     attributes: { class: 'custom-field' }, template: '<div><span>#= LastName #, #= FirstName #</div>' },
             ],
 
             toolbar: ["search"],
