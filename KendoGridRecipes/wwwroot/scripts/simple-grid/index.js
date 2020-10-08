@@ -8,7 +8,6 @@
         sortable: true,
 
         pageable: {
-            //refresh: true,
             pageSizes: [5, 10, 20, "all"],
             buttonCount: 5,
             pageSize: 10,

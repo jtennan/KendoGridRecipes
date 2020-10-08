@@ -1,0 +1,11 @@
+@section BottomScripts {
+    <script defer src="~/scripts/template-grid/index.js" type="module" asp-append-version="true"></script>
+}
+
+@* Kendo Templates info: https://docs.telerik.com/kendo-ui/framework/templates/overview *@
+
+<script id="email-template" type="text/x-kendo-template">
+    <a href="mailto:#= Email #" title="click to generate email">#= Email #</a>
+</script>
+
+<div id="template-grid"></div>

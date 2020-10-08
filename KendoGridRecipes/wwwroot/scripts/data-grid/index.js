@@ -7,9 +7,9 @@
         alert('fail');
     }
 
-    const peopleData = await response.json();
+    const jsonData = await response.json();
 
-    const localDataSource = new kendo.data.DataSource({ data: peopleData, pageSize: 10 });      // Kendo DataSource info: https://docs.telerik.com/kendo-ui/api/javascript/data/datasource
+    const localDataSource = new kendo.data.DataSource({ data: jsonData, pageSize: 10 });        // Kendo DataSource info: https://docs.telerik.com/kendo-ui/api/javascript/data/datasource
 
     $("#data-grid").kendoGrid({
         height: 600,
@@ -18,16 +18,15 @@
         dataSource: localDataSource,
 
         columns: [
-            { field: 'Id', title: 'Id' },
+            { field: 'Id',        title: 'Id' },
             { field: 'FirstName', title: 'First Name' },
-            { field: 'LastName', title: 'Last Name' },
-            { field: 'Email', title: 'Email' },
+            { field: 'LastName',  title: 'Last Name' },
+            { field: 'Email',     title: 'Email' },
         ],
 
         toolbar: ["search"],
 
         pageable: {
-            refresh: true,
             pageSizes: [5, 10, 20, "all"],
             buttonCount: 5,
             pageSize: 10,
