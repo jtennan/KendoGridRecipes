@@ -1,0 +1,13 @@
+@* IE browser check https://stackoverflow.com/a/19999868/11376606 *@
+
+<script>
+    (function () {
+        var ua    = window.navigator.userAgent,
+            msie = ua.indexOf('MSIE ');
+
+        if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) {
+            window.location.href = '@Url.Action("IENotSupported", "Home")';
+        }
+
+    }());
+</script>
