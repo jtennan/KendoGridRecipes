@@ -1,0 +1,11 @@
+@section BottomScripts {
+    <script defer src="~/scripts/event-grid/index.js" type="module" asp-append-version="true"></script>
+}
+
+@* Kendo Templates info: https://docs.telerik.com/kendo-ui/framework/templates/overview *@
+
+<script id="actions-template" type="text/x-kendo-template">
+    <button data-edit-record="#= Id #">Edit</button> | <button data-delete-url="@Url.Action("DeleteRecord", "Home")" data-delete-record="#= Id #">Delete</button>
+</script>
+
+<div id="actions-grid"></div>

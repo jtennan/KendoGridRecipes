@@ -28,6 +28,16 @@ namespace KendoGridRecipes.Controllers
             return View("TemplateGrid/Index");
         }
 
+        public IActionResult EventGrid()
+        {
+            return View("EventGrid/Index");
+        }
+
+        public IActionResult DeleteRecord(int id)
+        {
+            return Ok();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
