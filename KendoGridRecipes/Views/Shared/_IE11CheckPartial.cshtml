@@ -6,7 +6,7 @@
             msie = ua.indexOf('MSIE ');
 
         if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) {
-            window.location.href = '@Url.Action("IENotSupported", "Home")';
+            window.location.href = '@Url.Action("IeNotSupported", "Home")';
         }
 
     }());
